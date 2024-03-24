@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::-webkit-scrollbar {
+  width: 5px;
+  background-color: #110a3b;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ec004f;
+  border-radius: 2px;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.tilt-card {
+  background: #ec0000;
+  background: -webkit-linear-gradient(135deg, #ec008c, #ec0000);
+  background: linear-gradient(135deg, #ec008c, #ec0000);
+  box-shadow: 0px 5px 50px rgba(255, 86, 246, 0.51);
+}
+
+.contact-card {
+  background: #ec0000;
+  background: -webkit-linear-gradient(45deg, #ec008c, #ec0000);
+  background: linear-gradient(45deg, #ec008c, #ec0000);
+}
+
+.btn {
+  background: linear-gradient(to right,
+      #ec008c,
+      #ec004f,
+      #ff0000);
+  box-shadow: 0px 4.42184px 107.23px rgba(255, 86, 246, 0.51);
+}
+
+.btn:focus-visible,
+.btn:hover {
+  background: linear-gradient(to right,
+      #c10074,
+      #c50042,
+      #c70000);
+}
+
+.btn:focus-visible {
+  outline: auto;
+}
+
+.btn:active {
+  background: linear-gradient(to right,
+      #c70000,
+      #c50042,
+      #c10074);
+}
+
+.gradient,
+.active {
+  background: linear-gradient(to right,
+      #ec008c,
+      #ec004f,
+      #ec0000);
+}
+
+.active {
+  color: #fff;
+  padding: 1rem;
+  border-radius: 100%;
+}
+
+@media (max-width: 450px) {
+  .active {
+    padding: 0;
+  }
+}
+
+.about-bg {
+  transition: all ease-in-out 1s;
+  transition-delay: 0.15s;
+}
+
+.about-bg:hover {
+  transform: scale(1.1);
+}
+
+#home * {
+  font-family: inherit;
+}
+
+@layer base {
+
+  #home,
+  #about {
+    @apply font-secondary text-lg leading-8 text-white;
+  }
+
+  .h2 {
+    @apply font-primary text-[32px] mb-6 tracking-[10%] uppercase;
+  }
+
+  .h3 {
+    @apply font-primary font-semibold text-[24px] mb-6 leading-[46px];
+  }
+
+  .btn {
+    @apply rounded-full font-primary text-white font-medium;
+  }
+
+  .section {
+    @apply py-8 lg:py-24 lg:h-screen flex items-center;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  color-scheme: dark;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "orbitron";
+  letter-spacing: 1px;
+}
+
+.hash-span {
+  margin-top: -100px;
+  padding-bottom: 100px;
+  display: block;
+}
+
+.black-gradient {
+  background: #000000;
+  background: -webkit-linear-gradient(to right, #434343, #000000);
+  background: linear-gradient(to right, #434343, #000000);
+}
+
+.green-text {
+  color: #0e9524;
+  font-weight: 500;
+  text-shadow: 0 0 10px black;
+}
+
+.blue-text {
+  color: rgb(28, 220, 220);
+  font-weight: 500;
+  text-shadow: 0 0 10px black;
+}
+
+.pink-text {
+  color: #ec008c;
+  font-weight: 500;
+  text-shadow: 0 0 10px black;
+}
+
+.red-text-gradient {
+  background: #ec0000;
+  background: -webkit-linear-gradient(to top, #ec008c, #ec0000);
+  background: linear-gradient(to top, #ec008c, #ec0000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
