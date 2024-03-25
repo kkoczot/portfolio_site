@@ -12,7 +12,7 @@ const App = () => {
       <Nav />
       <Experience />
       <Works />
-      <div className="relative z-0 ">
+      <div className="relative z-0 overflow-hidden">
         <Suspense fallback={<Loader />}>
           <Contact />
           <StarsCanvas />

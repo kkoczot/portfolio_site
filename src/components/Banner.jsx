@@ -14,7 +14,13 @@ const Banner = () => {
             <motion.h1 variants={fadeIn("up", "spring", 0, 0.75)} initial="hidden" whileInView="show" viewport={{ once: true, amount: 0.7 }} className="text-[55px] font-bold leading-[0.8] lg:text-[110px]">
               Kacper&nbsp;<span>Koczot</span>
             </motion.h1>
-            <motion.div variants={fadeIn("up", "spring", 0, 1)} initial="hidden" whileInView="show" viewport={{ once: true, amount: 0.7 }} className="mb-6 text-[36px] lg:text-[60px] font-secondary font-semibold uppercase leading-[1]">
+            <motion.div
+              variants={fadeIn("up", "spring", 0, 1)}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true, amount: 0.7 }}
+              className="mb-6 text-[36px] max-xs:text-[30px] lg:text-[60px] font-secondary font-semibold uppercase leading-[1]"
+            >
               <TypeAnimation sequence={[
                 "an IT Student", 2000,
                 "an aspiring Developer", 2000,
