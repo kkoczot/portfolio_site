@@ -70,6 +70,7 @@ body {
   color: #fff;
   padding: 1rem;
   border-radius: 100%;
+  aspect-ratio: 1 / 1;
 }
 
 @media (max-width: 450px) {
@@ -89,6 +90,10 @@ body {
 
 #home * {
   font-family: inherit;
+}
+
+#home {
+  padding-top: 96px !important;
 }
 
 @layer base {

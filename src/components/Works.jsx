@@ -56,7 +56,7 @@ const Works = () => {
             and manage projects in an effective way.
           </motion.p>
         </div>
-        <div className="py-6 px-2 mt-20 flex flex-wrap gap-7">
+        <div className="py-6 px-2 mt-20 flex flex-wrap gap-7 gap-y-12">
           {projects.map((project, i) => (
             <ProjectCard
               key={`project-${i}`}

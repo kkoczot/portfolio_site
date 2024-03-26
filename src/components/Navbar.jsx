@@ -7,7 +7,9 @@ const Navbar = () => {
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
         <Link to="home" smooth className="flex items-center gap-2">
           <img src={logo} alt="logo" className="w-9 h-9 object-contain" />
-          <p className="text-white text-[18px] text-bold cursor-pointer flex">Kacper &nbsp; <span className="sm:block hidden">Koczot</span></p>
+          <p className="text-white text-[18px] text-bold cursor-pointer flex">
+            Kacper &nbsp; <span className="sm:block hidden">Koczot</span>
+          </p>
         </Link>
       </div>
     </nav >

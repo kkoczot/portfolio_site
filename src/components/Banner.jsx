@@ -11,7 +11,13 @@ const Banner = () => {
       <div className="container mx-auto">
         <div className="flex flex-col gap-y-8 lg:flex-row lg:items-center lg:gap-x-12">
           <div className="flex-1 text-center font-secondary lg:text-left">
-            <motion.h1 variants={fadeIn("up", "spring", 0, 0.75)} initial="hidden" whileInView="show" viewport={{ once: true, amount: 0.7 }} className="text-[55px] font-bold leading-[0.8] lg:text-[110px]">
+            <motion.h1
+              variants={fadeIn("up", "spring", 0, 0.75)}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true, amount: 0.7 }}
+              className="text-[50px] sm:text-[58px] font-bold leading-[0.8] lg:text-[110px]"
+            >
               Kacper&nbsp;<span>Koczot</span>
             </motion.h1>
             <motion.div
@@ -28,14 +34,27 @@ const Banner = () => {
                 "a hard-working Guy", 2000,
               ]} speed={50} className="red-text-gradient" wrapper="span" repeat={Infinity} />
             </motion.div>
-            <motion.p variants={fadeIn("up", "spring", 0, 1.25)} initial="hidden" whileInView="show" viewport={{ once: true, amount: 0.7 }} className="mb-12 max-w-lg mx-auto lg:mx-0">
-              I am {new Date(new Date().getTime() - new Date("2004/05/20").getTime()).getUTCFullYear() - 1970} yo guy. I am currently in the final
+            <motion.p
+              variants={fadeIn("up", "spring", 0, 1.25)}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true, amount: 0.7 }}
+              className="mb-12 max-w-lg mx-auto lg:mx-0"
+            >
+              I am {new Date(new Date().getTime() - new Date("2004/05/20").getTime()).getUTCFullYear() - 1970}
+              yo guy. I am currently in the final
               year of an IT technical school. {/* I have passed two professional exams (INF 02 and INF 03) */}
               I am interested in programming and I would like to work as a front-end dev and later as a full-stack dev.
               I completed professional internships in Spain and Portugal as part of the Erasmus program<br />
               I want to be the best, that&apos;s why I spend my free time learning and creating projects. I am persistent in what I do.
             </motion.p>
-            <motion.div variants={fadeIn("up", "spring", 0, 1.5)} initial="hidden" whileInView="show" viewport={{ once: true, amount: 0.7 }} className="flex items-center justify-center lg:justify-start gap-6 lg:mx-0">
+            <motion.div
+              variants={fadeIn("up", "spring", 0, 1.5)}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true, amount: 0.7 }}
+              className="flex items-center justify-center lg:justify-start gap-6 lg:mx-0"
+            >
               <h3>Contact me:</h3>
               <div className="flex gap-x-6 text-[20px]">
                 <a href="https://github.com/kkoczot" aria-label="Check out my github" target="_blank" className="hover:opacity-60" >
@@ -47,7 +66,13 @@ const Banner = () => {
               </div>
             </motion.div>
           </div>
-          <motion.div variants={fadeIn("left", "spring", 0, 0.75)} initial="hidden" whileInView="show" viewport={{ once: true, amount: 0.7 }} className="hidden lg:flex lfex-1 max-w-[320px] lg:max-w-[482px]">
+          <motion.div
+            variants={fadeIn("left", "spring", 0, 0.75)}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true, amount: 0.7 }}
+            className="hidden lg:flex lfex-1 max-w-[320px] lg:max-w-[482px]"
+          >
             <Tilt options={{ max: 45, scale: 1, speed: 450 }} className="p-2 rounded-2xl">
               <img src={Image} alt="Me" className="rounded-2xl min-w-[150px]" />
             </Tilt>

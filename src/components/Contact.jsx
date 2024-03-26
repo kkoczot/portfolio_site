@@ -90,7 +90,10 @@ const Contact = () => {
                 className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-r-lg outline-none border-none font-medium"
               />
             </label>
-            <button type='submit' className='bg-tertiary py-3 px-8 outline-none w-fit text-white font-bold shadow-md shadow-primary rounded-xl btn'>
+            <button
+              type='submit'
+              className='bg-tertiary py-3 px-8 outline-none w-fit text-white font-bold shadow-md shadow-primary rounded-xl btn'
+            >
               {loading ? "Sending..." : "Send"}
             </button>
           </form>
